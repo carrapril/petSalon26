@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>April's Pet Salon Register</title>
+    <link rel="stylesheet" href="styles/pet.css">
+</head>
+<body>
+    <!--creat a form with the following inputs name, age, gender, breed, service, owner, contact-->
+    <header>
+        <h1>Register</h1>
+    </header>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+        <section>
+            <article>
+                <form>
+                    <tr>
+                        <td>
+                                <div>
+                                    <label for="petname">Pet Name:</label>
+                                    <input type="text" name="petname" id="petname">
+                                </div>
+                                <div>
+                                    <label for="petage">Pet Age:</label>
+                                    <input type="text" name="petage" id="petage">
+                                </div>
+                                <div>
+                                    <label for="pettype">Pet Type:</label>
+                                    <input type="text" name="pettype" id="pettype">
+                                    
+                                </div>
+                                <div>
+                                    <label for="petgender">Pet Gender:</label><br>
+                                    <input type="text" name="petgender" id="petgender">
+                                </div>
+                                <div>
+                                    <label for="services">Services:</label><br>
+                                    <input type="text" name="services" id="services">
+                                </div>
+                                <div>
+                                    <label for="ownername">Owner Name:</label><br>
+                                    <input type="text" name="ownername" id="ownername"><br><br>
+                                </div>
+                                <div>
+                                    <label for="ownernumber">Owner Number:</label><br>
+                                    <input type="text" name="ownernumber" id="ownernumber"><br>
+                                </div>
+                                <div class="form-action-buttons">
+                                    <input type="submit" value="Register" onclick="AddRow();">
+                                </div>
+                        </td>
+                        <!--table list for records--> 
+                        <td>
+                            <table class="list">
+                                    <tr>
+                                        <th>Pet Name</th>
+                                        <th>Pet Age</th>
+                                        <th>Pet Type</th>
+                                        <th>Pet Gender</th>
+                                        <th>Service</th>
+                                        <th>Owner Name</th>
+                                        <th>Owner Number</th>
+                                        <th></th>
+                                    </tr>
+                                <tbody>
+    
+                                </tbody>
+    
+                            </table>  
+                        </td>
+                    </tr>
+                </form> 
+
+            </article>
+        </section> 
+        <input type="text" id="petName">
+        <button onclick="register();"></button>    
+
+        <footer>
+            <p>The Fashionable Pet Salon</p>
+            <p>555-555-5555</p>
+            <p>Address: 123 Animal Ave.</p>
+            <p>San Diego, CA</p>
+        </footer>
+        <script src="scripts/register.js"></script>
+    <!-- <script src="scripts/register2.js"></script>    -->
+     
+</body>
+</html>
